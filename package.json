@@ -1,6 +1,6 @@
 {
-  "name": "esy-gdk-pixbuf-2.38.1",
-  "version": "0.0.000",
+  "name": "esy-gdk-pixbuf",
+  "version": "2.38.1000",
   "description": "gdk-pixbuf-2.38.1 packaged for esy",
   "esy": {
     "exportedEnv": {
@@ -10,7 +10,8 @@
       }
     },
     "buildEnv": {
-      "TMPDIR": "#{self.install / 'var' / 'tmp'}"
+      "TMPDIR": "#{self.install / 'var' / 'tmp'}",
+      "LD_LIBRARY_PATH": "#{pcre.lib}:#{libiconv.lib}:$LD_LIBRARY_PATH"
     },
     "build": [
       "mkdir -p $TMPDIR",
@@ -22,7 +23,9 @@
     ]
   },
   "dependencies": {
+    "pcre": "esy-packages/esy-pcre#c5076c8facbebaf5f5718c0e270418fd218add7e",
     "meson": "prometheansacrifice/esy-meson#dce5534b0acd7a2b85b5cee78e933796204e0cce",
+    "libiconv": "prometheansacrifice/esy-libiconv#90beb704ffc6e9fa0f59a28dee153136e330462b",
     "esy-libjpeg": "prometheansacrifice/libjpeg-turbo#50e8e32c48fbe3494a7b8403d019bcb3bd2a9d9b",
     "esy-glib": "prometheansacrifice/esy-glib#3275b277ef7fb7237e4ef6b5f2153f97321700e6",
     "ninja": "prometheansacrifice/esy-ninja#37fae9254002a02bb56c4b65b6fad54fcaae8bae"
