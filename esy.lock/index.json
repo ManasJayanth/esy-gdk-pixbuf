@@ -1,6 +1,6 @@
 {
-  "checksum": "f30a82ce3079f4527a3ca544b6445974",
-  "root": "esy-gdk-pixbuf-2.38.1@link-dev:./package.json",
+  "checksum": "75baba469214337c71fbc1b6bd62c947",
+  "root": "esy-gdk-pixbuf@link-dev:./package.json",
   "node": {
     "pkg-config@github:prometheansacrifice/yarn-pkg-config#cc5b4f913cccee781461b16d49b902c84727e7ed@d41d8cd9": {
       "id":
@@ -157,22 +157,6 @@
       ],
       "devDependencies": []
     },
-    "esy-libiconv@github:prometheansacrifice/esy-libiconv#38bab1ac2d53ae01b9c945620f6267446c4b2baa@d41d8cd9": {
-      "id":
-        "esy-libiconv@github:prometheansacrifice/esy-libiconv#38bab1ac2d53ae01b9c945620f6267446c4b2baa@d41d8cd9",
-      "name": "esy-libiconv",
-      "version":
-        "github:prometheansacrifice/esy-libiconv#38bab1ac2d53ae01b9c945620f6267446c4b2baa",
-      "source": {
-        "type": "install",
-        "source": [
-          "github:prometheansacrifice/esy-libiconv#38bab1ac2d53ae01b9c945620f6267446c4b2baa"
-        ]
-      },
-      "overrides": [],
-      "dependencies": [],
-      "devDependencies": []
-    },
     "esy-libffi@github:esy-ocaml/libffi#599bc3567ecf839240977b6d9aaf0b80f983b5aa@d41d8cd9": {
       "id":
         "esy-libffi@github:esy-ocaml/libffi#599bc3567ecf839240977b6d9aaf0b80f983b5aa@d41d8cd9",
@@ -208,32 +192,30 @@
         "ninja@github:prometheansacrifice/esy-ninja#37fae9254002a02bb56c4b65b6fad54fcaae8bae@d41d8cd9",
         "meson@github:prometheansacrifice/esy-meson#dce5534b0acd7a2b85b5cee78e933796204e0cce@d41d8cd9",
         "libiconv@github:prometheansacrifice/esy-libiconv#90beb704ffc6e9fa0f59a28dee153136e330462b@d41d8cd9",
-        "esy-gettext@github:prometheansacrifice/esy-gettext#11d1cf660082bd350f9df7b60c510271aeab804c@d41d8cd9",
+        "esy-gettext@github:prometheansacrifice/esy-gettext#d1abfd44b560c36b02e06e5393b8e3b64d8c96be@d41d8cd9",
         "@esy-ocaml/libffi@github:prometheansacrifice/libffi#9f60bed74b01fefb5f26b49806108cdfe0ed6384@d41d8cd9"
       ],
       "devDependencies": []
     },
-    "esy-gettext@github:prometheansacrifice/esy-gettext#11d1cf660082bd350f9df7b60c510271aeab804c@d41d8cd9": {
+    "esy-gettext@github:prometheansacrifice/esy-gettext#d1abfd44b560c36b02e06e5393b8e3b64d8c96be@d41d8cd9": {
       "id":
-        "esy-gettext@github:prometheansacrifice/esy-gettext#11d1cf660082bd350f9df7b60c510271aeab804c@d41d8cd9",
+        "esy-gettext@github:prometheansacrifice/esy-gettext#d1abfd44b560c36b02e06e5393b8e3b64d8c96be@d41d8cd9",
       "name": "esy-gettext",
       "version":
-        "github:prometheansacrifice/esy-gettext#11d1cf660082bd350f9df7b60c510271aeab804c",
+        "github:prometheansacrifice/esy-gettext#d1abfd44b560c36b02e06e5393b8e3b64d8c96be",
       "source": {
         "type": "install",
         "source": [
-          "github:prometheansacrifice/esy-gettext#11d1cf660082bd350f9df7b60c510271aeab804c"
+          "github:prometheansacrifice/esy-gettext#d1abfd44b560c36b02e06e5393b8e3b64d8c96be"
         ]
       },
       "overrides": [],
-      "dependencies": [
-        "esy-libiconv@github:prometheansacrifice/esy-libiconv#38bab1ac2d53ae01b9c945620f6267446c4b2baa@d41d8cd9"
-      ],
+      "dependencies": [],
       "devDependencies": []
     },
-    "esy-gdk-pixbuf-2.38.1@link-dev:./package.json": {
-      "id": "esy-gdk-pixbuf-2.38.1@link-dev:./package.json",
-      "name": "esy-gdk-pixbuf-2.38.1",
+    "esy-gdk-pixbuf@link-dev:./package.json": {
+      "id": "esy-gdk-pixbuf@link-dev:./package.json",
+      "name": "esy-gdk-pixbuf",
       "version": "link-dev:./package.json",
       "source": {
         "type": "link-dev",
@@ -242,8 +224,10 @@
       },
       "overrides": [],
       "dependencies": [
+        "pcre@github:esy-packages/esy-pcre#c5076c8facbebaf5f5718c0e270418fd218add7e@d41d8cd9",
         "ninja@github:prometheansacrifice/esy-ninja#37fae9254002a02bb56c4b65b6fad54fcaae8bae@d41d8cd9",
         "meson@github:prometheansacrifice/esy-meson#dce5534b0acd7a2b85b5cee78e933796204e0cce@d41d8cd9",
+        "libiconv@github:prometheansacrifice/esy-libiconv#90beb704ffc6e9fa0f59a28dee153136e330462b@d41d8cd9",
         "esy-libjpeg@github:prometheansacrifice/libjpeg-turbo#50e8e32c48fbe3494a7b8403d019bcb3bd2a9d9b@d41d8cd9",
         "esy-glib@github:prometheansacrifice/esy-glib#3275b277ef7fb7237e4ef6b5f2153f97321700e6@d41d8cd9"
       ],

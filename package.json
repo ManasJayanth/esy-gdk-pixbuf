@@ -15,7 +15,7 @@
     },
     "build": [
       "mkdir -p $TMPDIR",
-      "meson setup -Dgir=false -Ddocs=false -Dman=false -Dx11=false --prefix #{self.install} --libdir #{self.lib} #{self.target_dir}",
+      "meson setup -Dbuiltin_loaders=true -Dgir=false -Ddocs=false -Dman=false -Dx11=false --prefix #{self.install} --libdir #{self.lib} #{self.target_dir}",
       "ninja -C #{self.target_dir}"
     ],
     "install": [
@@ -30,5 +30,7 @@
     "esy-glib": "prometheansacrifice/esy-glib#3275b277ef7fb7237e4ef6b5f2153f97321700e6",
     "ninja": "prometheansacrifice/esy-ninja#37fae9254002a02bb56c4b65b6fad54fcaae8bae"
   },
-  "resolutions": {}
+    "resolutions": {
+    "esy-gettext": "prometheansacrifice/esy-gettext#d1abfd44b560c36b02e06e5393b8e3b64d8c96be"
+    }
 }
